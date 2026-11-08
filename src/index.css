@@ -1,0 +1,94 @@
+:root {
+    --color-fondo: #FDFBF7;
+    --color-rojo-tipum: #D9381E;
+    --color-cafe-oscuro: #3E2723;
+    --color-texto: #333333;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+main {
+    min-height: 75vh;
+}
+
+#banner-principal {
+    background-image: linear-gradient(rgba(62, 39, 35, 0.7), rgba(62, 39, 35, 0.7)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#banner-principal h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-tipum {
+    background-color: var(--color-rojo-tipum) !important;
+    border-color: var(--color-rojo-tipum) !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-tipum:hover {
+    background-color: #b82b15 !important;
+    transform: translateY(-2px);
+}
+
+.producto-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.formulario-contenedor {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid var(--color-rojo-tipum);
+}
+
+footer {
+    background-color: var(--color-cafe-oscuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: auto;
+}
