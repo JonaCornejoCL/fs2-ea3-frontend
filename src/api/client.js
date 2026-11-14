@@ -1,5 +1,5 @@
 
-const API_URL = 'http://http://3.85.63.50:8080/api';
+const API_BASE_URL = '';
 
 function getToken() {
   return localStorage.getItem('tokenTipum')
